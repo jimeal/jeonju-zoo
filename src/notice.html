@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <ul class="skip_navi">
+    <li><a href="#main">분문내용</a></li>
+  </ul>
+  <div class="container">
+    <header class="header">
+      <div class="inner clearfix">
+        <h1 class="logo">
+          <a href="/">
+            <img src="./images/logo.svg" alt="전주동물원">
+          </a>
+        </h1>
+
+        <div class="header__right">
+          <ul class="header__right-info">
+            <li>
+              <a href="javascript:;">
+                <img src="./images/ico-location.png" alt="오시는길">
+                <span>오시는길</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./images/ico-ticket.png" alt="할인정보">
+                <span>할인정보</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="btn--toggle">토글버튼</button>
+
+          <!-- GNB -->
+          <nav class="nav">
+            <ul class="nav__gnb">
+              <li>
+                <a href="javascript:;">동물원소개</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">인사말</a></li>
+                  <li><a href="javascript:;">설립목적과 비전</a></li>
+                  <li><a href="javascript:;">전주동물원의 역사</a></li>
+                  <li><a href="javascript:;">운영현황</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">이용정보</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">이용안내</a></li>
+                  <li><a href="javascript:;">시설안내</a></li>
+                  <li><a href="javascript:;">오시는길</a></li>
+                  <li><a href="javascript:;">개인정보 취급방침</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">동물원즐기기</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">우리 꼭 지켜요</a></li>
+                  <li><a href="javascript:;">관람안내도</a></li>
+                  <li><a href="javascript:;">추천코스</a></li>
+                  <li><a href="javascript:;">VR 사전답사</a></li>
+                  <li><a href="javascript:;">동물생태해설신청</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">동물이야기</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">동물가족소개</a></li>
+                  <li><a href="javascript:;">보금자리 안내</a></li>
+                  <li><a href="javascript:;">동물행복프로젝트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">동물원소식</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">공지사항</a></li>
+                  <li><a href="javascript:;">동물원일상</a></li>
+                  <li><a href="javascript:;">홍보센터</a></li>
+                  <li><a href="javascript:;">행사/이벤트</a></li>
+                  <li><a href="javascript:;">자원봉사신청</a></li>
+                  <li><a href="javascript:;">묻고답하기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </header>
+    
+    <main id="main">
+      <section class="banner">
+        <div class="inner">
+          <h2 class="banner--title"><%= htmlWebpackPlugin.options.title %></h2>
+          <ul class="breadcrumb-ul">
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li><%= htmlWebpackPlugin.options.title %></li>
+            <li>공지사항</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="news-tab">
+        <div class="inner">
+          <ul class="news-tab-ul">
+            <li>
+              <a href="javascript:;" class="active">공지사항</a>
+            </li>
+            <li>
+              <a href="javascript:;">동물원일상</a>
+            </li>
+            <li>
+              <a href="javascript:;">홍보센터</a>
+            </li>
+            <li>
+              <a href="javascript:;">행사&이벤트</a>
+            </li>
+            <li>
+              <a href="javascript:;">자원봉사신청</a>
+            </li>
+            <li>
+              <a href="javascript:;">묻고답하기</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="news-notice">
+        <div class="inner">
+          <form action="#" class="news-notice__search clearfix">
+            <fieldset>
+              <legend class="sr-only">검색</legend>
+              <select name="" id="">
+                <option value="">제목</option>
+                <option value="">작성자</option>
+                <option value="">내용</option>
+              </select>
+              <input type="text" class="news-notice__search-input" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
+              <a href="javascript:;" class="btn_search">검색</a>
+            </fieldset>
+          </form>
+          <table class="news-notice__table" summary="번호,제목,조회수,작성일 등을 제공하는 표">
+            <caption class="sr-only">공지사항  목록</caption>
+            <thead>
+              <tr>
+                <th scope="col">번호</th>
+                <th scope="col">제목</th>
+                <th scope="col">조회수</th>
+                <th scope="col">작성자</th>
+                <th scope="col">작성일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14</td>
+                <td class="tit_notice"><a href="javascript:;">2023년 8월 동물생태해설 운영 재개 안내</a> </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td class="tit_notice"><a href="javascript:;">2023년 7-8월 동물생태해설 운영 안내</a> </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주동물원 일부 동물사 관람 제한 안내</a>
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">사육사 진로상담 교실 신청 모집 공고 안내</a>
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">2023년 전주동물원 동물생태해설 운영 안내</a>
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">드림랜드(놀이공원) 운영 중단 안내</a>
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주동물원 반입 금지 물품 안내</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주동물원 유모차 및 휠체어 대여 안내</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">동물원 이용시 시설별 문의처 안내</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">어린이날 무료입장 안내</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주동물원 추석연휴 정상 운영 안내</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주시 다자녀 가정 입장료 감면대상 확대 안내(2022.4.14.일부터)</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주동물원 야간개장 폐지 알림</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="tit_notice">
+                  <a href="javascript:;">전주동물원 입장료 인상 예정 안내</a> 
+                </td>
+                <td>123</td>
+                <td>관리자</td>
+                <td>2018-08-01</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- pagination -->
+          <div class="pagination">
+            <a href="javascript:;" class="firstpage  pbtn"><img src="../images/btn_firstpage.png" alt="첫 페이지로 이동"></a>
+            <a href="javascript:;" class="prevpage  pbtn"><img src="../images/btn_prevpage.png" alt="이전 페이지로 이동"></a>
+            <a href="javascript:;"><span class="pagenum currentpage">1</span></a>
+            <a href="javascript:;"><span class="pagenum">2</span></a>
+            <a href="javascript:;"><span class="pagenum">3</span></a>
+            <a href="javascript:;"><span class="pagenum">4</span></a>
+            <a href="javascript:;"><span class="pagenum">5</span></a>
+            <a href="javascript:;" class="nextpage  pbtn"><img src="../images/btn_nextpage.png" alt="다음 페이지로 이동"></a>
+            <a href="javascript:;" class="lastpage  pbtn"><img src="../images/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
+          </div>
+          <!-- //pagination -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <article class="footer--left">
+          <ul class="footer-shortcut">
+            <li><a href="/">home</a></li>
+            <li><a href="/">개인정보취급방침</a></li>
+            <li><a href="/">묻고답하기</a></li>
+            <li><a href="/">자원봉사신청</a></li>
+          </ul>
+          <address>위치 : 전북 전주시 덕진구 소리로 68 전주동물원(덕진동 1가 73-48) 대표전화 : 063-281-6759</address>
+          <span class="copyright">Copyright © 2020 전주동물원. All rights reserved.</span>
+        </article>
+
+        <article class="footer--right">
+          <button class="select-btn">family site</button>
+          <ul class="footer--right-ul">
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">전주시청</a>
+            </li>
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">전주시문화관광</a>
+            </li>
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">전라북도 문화관광</a>
+            </li>
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">사단법인 카자</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

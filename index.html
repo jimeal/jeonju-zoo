@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <ul class="skip_navi">
+    <li><a href="#main">분문내용</a></li>
+  </ul>
+  <div class="container">
+    <header class="header">
+      <div class="inner clearfix">
+        <h1 class="logo">
+          <a href="/">
+            <img src="./images/logo.svg" alt="전주동물원">
+          </a>
+        </h1>
+
+        <div class="header__right">
+          <ul class="header__right-info">
+            <li>
+              <a href="javascript:;">
+                <img src="./images/ico-location.png" alt="오시는길">
+                <span>오시는길</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./images/ico-ticket.png" alt="할인정보">
+                <span>할인정보</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="btn--toggle">토글버튼</button>
+        
+
+          <!-- GNB -->
+          <nav class="nav">
+            <ul class="nav__gnb">
+              <li>
+                <a href="javascript:;">동물원소개</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">인사말</a></li>
+                  <li><a href="javascript:;">설립목적과 비전</a></li>
+                  <li><a href="javascript:;">전주동물원의 역사</a></li>
+                  <li><a href="javascript:;">운영현황</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">이용정보</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">이용안내</a></li>
+                  <li><a href="javascript:;">시설안내</a></li>
+                  <li><a href="javascript:;">오시는길</a></li>
+                  <li><a href="javascript:;">개인정보 취급방침</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">동물원즐기기</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">우리 꼭 지켜요</a></li>
+                  <li><a href="javascript:;">관람안내도</a></li>
+                  <li><a href="javascript:;">추천코스</a></li>
+                  <li><a href="javascript:;">VR 사전답사</a></li>
+                  <li><a href="javascript:;">동물생태해설신청</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">동물이야기</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="javascript:;">동물가족소개</a></li>
+                  <li><a href="javascript:;">보금자리 안내</a></li>
+                  <li><a href="javascript:;">동물행복프로젝트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">동물원소식</a>
+                <ul class="nav__gnb-sub">
+                  <li><a href="./notice.html">공지사항</a></li>
+                  <li><a href="javascript:;">동물원일상</a></li>
+                  <li><a href="javascript:;">홍보센터</a></li>
+                  <li><a href="javascript:;">행사/이벤트</a></li>
+                  <li><a href="javascript:;">자원봉사신청</a></li>
+                  <li><a href="javascript:;">묻고답하기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </header>
+    
+    <main id="main">
+      <!-- YOUTUBE VIDEO -->
+      <section class="youtube">
+        <div class="youtube__area">
+            <!-- <div id="player"></div> -->
+            <iframe src="https://www.youtube.com/embed/jpr8D2pnA5M?si=nfV1YB4rdEZL87Cb&controls=0&showinfo=0&modestbranding=1&autoplay=1&mute=1&loop=1&&playlist=jpr8D2pnA5M&fs=0&iv_load_policy=3&modestbranding=1&rel=0&enablejsapi=1" frameborder="0" allowfullscreen tabindex="-1"></iframe>
+
+        </div>
+        <div class="youtube__cover"></div>
+      </section>
+
+      <section class="notice">
+        <div class="inner">
+          <span class="sub-title">전주동물원 새소식 및 이용안내</span>
+          <h2 class="section__title">도심속의 쉼터, 전주동물원</h2>
+
+          <div class="notice__content">
+            <article class="notice__left">
+              <a href="javascript:;">
+                <img src="./images/main_bnr.jpg" alt="코로나19 확산방지를 위한 동물원 안전관람 행동수칙 1.마스크를 착용해요 2.생활속 거리두기를 실천해요 3.손 씻기 및 손 소독을 해요">
+              </a>
+            </article>
+            <article class="notice__right">
+              <div class="item-open item-box">
+                <h3 class="item-title">운영시간</h3>
+                <lottie-player src="./time.json" speed="0.5"  style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+                <div class="item-open__container">
+                  <span class="item-badge on">ON</span>
+                  <ul class="item-open--ul">
+                    <li>하절기 (03 ~ 10월)</li>
+                    <li>09시 ~ 19시 (입장마감 18시)</li>
+                  </ul>
+                  <span class="item-badge off">OFF</span>
+                  <ul class="item-open--ul">
+                    <li>동절기 (11월 ~ 02월)</li>
+                    <li>09시 ~ 18시 (입장마감 17시)</li>
+                  </ul>
+
+                </div>
+                <a href="javascript:;" class="item-open-link">이용안내 자세히보기</a>
+
+              </div>
+              <div class="item-shortcut">
+                <ul class="item-shortcut--ul">
+                  <li>
+                    <a href="javascript:;">
+                      <span>개인단체 및 입장료</span>
+                      <div class="arrow">바로가기아이콘</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <span>무료입장권 발급대상</span>
+                      <div class="arrow">바로가기아이콘</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <span>행사 및 이벤트</span>
+                      <div class="arrow">바로가기아이콘</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item-notice">
+                <div class="item-notice--title">
+                  <span class="item-notice--icon">
+                    <img src="./images/ico_notice.svg" alt="공지사항">
+                  </span>
+                  <h3 class="item-title">공지사항</h3>
+                </div>
+
+                <ul class="item-notice__content">
+                  <li>
+                    <a href="javascript:;">
+                      <span class="notice__content-title">2023년 8월 동물생태해설 운영재개 안내</span>
+                      <span class="notice__content-date">2023-08-16</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <span class="notice__content-title">2023년 7-8월 동물생태해설 운영 안내</span>
+                      <span class="notice__content-date">2023-06-22</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <span class="notice__content-title">전주동물원 일부 동물사 관람 제한 안내</span>
+                      <span class="notice__content-date">2023-04-03</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="shortcut-menu">
+        <div class="inner">
+          <h2 class="sr-only">바로가기 메뉴</h2>
+          <ul class="shortcut-menu--ul">
+            <!-- <li>
+              <a href="javascript:;">
+                <img src="./images/${item.img}.svg" alt="${item.name}"/>
+                <span class="shct-text">${item.name}</span>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+      
+      <section class="info-animal">
+        <div class="inner">
+          <span class="sub-title">전주동물원 안에서 행복한 동물소식</span>
+          <h2 class="section__title">전주동물원 동물이야기</h2>
+
+          <div class="info-content">
+            <article class="info--left">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="javascript:;">
+                      <img class="img-lg" src="./images/info-slide1.jpg" alt="동물행복 프로젝트 수수, 달달이의 미끄럼틀 타기 코순이의 흙목욕! 코아티의 사다리타기! 동물 친구들도 재밌게 즐기는 전주 동물원">
+                      <img class="img-sm" src="./images/info_slide_sm1.jpg" alt="동물행복 프로젝트 수수, 달달이의 미끄럼틀 타기 코순이의 흙목욕! 코아티의 사다리타기! 동물 친구들도 재밌게 즐기는 전주 동물원">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="javascript:;">
+                      <img class="img-lg" src="./images/info-slide2.jpg" alt="시설 개선 및 행동풍부화 프로그램 새롭게 만나는 잔나비의 숲 우리 원숭이 친구들이 새 보금자리에서 더 높이 더 멀리 뛰어노는 모습을 보러 와주세요">
+                      <img class="img-sm" src="./images/info_slide_sm2.jpg" alt="시설 개선 및 행동풍부화 프로그램 새롭게 만나는 잔나비의 숲 우리 원숭이 친구들이 새 보금자리에서 더 높이 더 멀리 뛰어노는 모습을 보러 와주세요">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+
+            <article class="info--right">
+              <ul class="info-best-posting">
+                <li>
+                  <a href="javascript:;">
+                    <figure>
+                      <div class="fig-img">
+                        <img src="./images/info-img1.jpg" alt="킁킁! 어디서...">
+                      </div>
+                      <figcaption>
+                        <span class="best text-line1">킁킁! 어디서...</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <figure>
+                      <div class="fig-img">
+                        <img src="./images/info-img2.jpg" alt="떡하나 주면">
+                      </div>
+                      <figcaption>
+                        <span class="best text-line1">떡하나 주면</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="info-animal-shortcut">
+                <li class="item-animal">
+                  <a href="javascript:;">
+                    <span>포유류</span>
+                  </a>
+                </li>
+                <li class="item-animal">
+                  <a href="javascript:;">
+                    <span>어류</span>
+                  </a>
+                </li>
+                <li class="item-animal">
+                  <a href="javascript:;">
+                    <span>파충류</span>
+                  </a>
+                </li>
+                <li class="item-animal">
+                  <a href="javascript:;">
+                    <span>조류</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommend">
+        <span class="sub-title">전주동물원이 추천하는 추천코스</span>
+        <h2 class="section__title">전주동물원 제대로 즐기기</h2>
+        <div class="recommend__container">
+          <div class="inner">
+
+            <div class="recommend-content">
+              <article class="article-healing">
+                <span>Healing coures</span>
+                <h3 class="rec-title">푸르른 자연 속 여유롭게<br>힐링하는 전주동물원</h3>
+                <a href="javascript:;" class="rec-link">바로가기</a>
+                <img src="./images/bg_course01.png" alt="">
+              </article>
+              <article class="article-animal">
+                <span>Animal coures</span>
+                <h3 class="rec-title">다양한 동물들과 함께<br>교감하는 전주동물원</h3>
+                <a href="javascript:;" class="rec-link">바로가기</a>
+                <img src="./images/bg_course02.png" alt="">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-count">
+        <div class="inner">
+          <h2 class="section__title">
+            <img src="./images/counter.png" alt="숫자로 보는 전주동물원">
+          </h2>
+          <div class="count-content">
+            <div class="count-section">
+              <p>since <strong class="number-target" data-number="1978">1978</strong></p>
+              <span>40년 역사를 자랑하는<br> 대표 생태동물원</span>
+            </div>
+            <div class="count-section">
+              <p><strong class="number-target" data-number="187575">187575</strong>m²</p>
+              <span>다양한 동물과 식물들이<br>숨쉬는
+                넓은 공원</span>
+            </div>
+            <div class="count-section">
+              <p>약 <strong class="number-target" data-number="430">430</strong>여마리</p>
+              <span>사자, 호랑이, 하마 등<br>
+                약 430여마리 보유</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shortcut-sns">
+        <div class="inner">
+          <ul class="sns-list">
+            <li>
+              <a href="javascript:;">
+                <span class="sr-only">페이스북 바로가기</span>
+                <i class="xi-facebook xi-x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <span class="sr-only">유튜브 바로가기</span>
+                <i class="xi-youtube-play xi-x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <span class="sr-only">인스타그램 바로가기</span>
+                <i class="xi-instagram xi-x"></i>
+              </a>
+            </li>
+          </ul>
+          <span>SNS 팔로우하고 전주동물원 소식을 바로바로 받아보세요!</span>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <article class="footer--left">
+          <ul class="footer-shortcut">
+            <li><a href="/">home</a></li>
+            <li><a href="/">개인정보취급방침</a></li>
+            <li><a href="/">묻고답하기</a></li>
+            <li><a href="/">자원봉사신청</a></li>
+          </ul>
+          <address>위치 : 전북 전주시 덕진구 소리로 68 전주동물원(덕진동 1가 73-48) 대표전화 : 063-281-6759</address>
+          <span class="copyright">Copyright © 2020 전주동물원. All rights reserved.</span>
+        </article>
+
+        <article class="footer--right">
+          <button class="select-btn">family site</button>
+          <ul class="footer--right-ul">
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">전주시청</a>
+            </li>
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">전주시문화관광</a>
+            </li>
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">전라북도 문화관광</a>
+            </li>
+            <li>
+              <a href="http://www.jeonju.go.kr" target="_blank" title="전주시청 새창열기">사단법인 카자</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
