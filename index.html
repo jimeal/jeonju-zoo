@@ -12,6 +12,28 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    function getCookie(name) {
+      let nameOfCookie = name + "=";
+      let x = 0;
+      while ( x <= document.cookie.length) {
+        var y = (x+nameOfCookie.length);
+        if (document.cookie.substring( x, y ) == nameOfCookie) {
+          if ((endOfCookie=document.cookie.indexOf(";", y)) == -1)
+          endOfCookie = document.cookie.length;
+          return unescape(document.cookie.substring( y, endOfCookie));
+        }
+        x = document.cookie.indexOf("", x) + 1;
+        if ( x == 0 )
+        break;
+      }
+      return "";
+    }
+    if (getCookie("Notice") != "done") {
+      noticeWindow = window.open('./popup.html','notice','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=500,height=625,left=0,top=0');
+      noticeWindow.opener = self;
+    }
+  </script>
 </head>
 <body>
   <ul class="skip_navi">

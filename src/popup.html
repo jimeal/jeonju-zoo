@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script>
+    function setCookie(name, value, expiredays) {
+      const todayDate = new Date();
+      todayDate.setDate(todayDate.getDate() + expiredays);
+      document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+    function closeWin() {
+      if (document.forms[0].Notice.checked )
+      setCookie("Notice", "done" , 1);
+      self.close();
+    }
+    function closeWindow(mainLink){
+      opener.location.href = mainLink;
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <div class="popup">
+    <img src="../images/popup.jpg" alt="">
+
+    <table align = "center" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+      <td align="center">
+      <form>
+      <input type=CHECKBOX name="Notice" value="">
+      <font face="돋움">
+      오늘은 그만 띄우기&nbsp;&nbsp;&nbsp;</font>
+      <a href="javascript:history.onclick=closeWin()">
+        <font face="돋움"><b>[CLOSE]</b></font>
+      </a>
+      </form>
+      </td>
+      </tr>
+      </table>
+  </div>
+</body>
+</html>

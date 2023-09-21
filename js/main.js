@@ -58,7 +58,7 @@ const mainWrap = () => {
             }
         });  
   })
-  
+
 }
 
 export default mainWrap;

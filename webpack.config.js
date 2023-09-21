@@ -2,22 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const isDevMode = process.env.NODE_ENV.includes('dev')
-
-// if (!isDevMode) {
-//   plugins.push(
-//     new MiniCssExtractPlugin({
-//       linkType: false,
-//       filename: '[name].[contenthash].css',
-//       chunkFilename: '[id].[contenthash].css',
-//     })
-//   )
-// }
 
 module.exports = {
   entry: {
     main: './js/app.js',
-    notice : './js/notice.js'
+    notice : './js/notice.js',
+    popup: './js/popup.js'
   },
   output: {
     filename: '[name].js',
@@ -43,7 +33,8 @@ module.exports = {
       title : '전주동물원',
       hash : true,
       filename : 'index.html',
-      excludeChunks : ['notice'],
+      excludeChunks : ['notice', 'popup'],
+      chunks: ['main'],
       template: './index.html'
   }),
   new HtmlWebpackPlugin({
@@ -52,6 +43,13 @@ module.exports = {
       filename : 'notice.html',
       chunks : ['notice'],
       template: './src/notice.html'
+  }),
+  new HtmlWebpackPlugin({
+      title : '전주동물원 팝업',
+      hash : true,
+      filename : 'popup.html',
+      chunks : ['popup'],
+      template: './src/popup.html'
   }),
     new CopyPlugin({
       patterns: [
